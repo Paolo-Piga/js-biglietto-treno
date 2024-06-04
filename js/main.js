@@ -25,7 +25,10 @@ if (anni > 65){
     prezzo = (costoKm * percorso) /100 *60;
 }
 
-console.log(prezzo.toFixed(2));
+console.log(prezzo);
 
+const arr_num = prezzo.toFixed(2);
 
-document.getElementById("messaggio").innerHTML = `Il biglietto costa: ${prezzo}`
+console.log(arr_num);
+
+document.getElementById("messaggio").innerHTML = `Il biglietto costa: ${arr_num}`
