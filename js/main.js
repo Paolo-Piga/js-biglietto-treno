@@ -15,5 +15,14 @@ console.log(percorso);
 // prezzo biglietto
 let prezzo = costoKm * percorso;
 
-console.log("il biglietto costa: ", prezzo);
+console.log(prezzo);
 
+if (anni < 18){
+    let prezzo = (costoKm * percorso) /100 *80;
+}
+
+if (anni > 65){
+    let prezzo = (costoKm * percorso) /100 *60;
+}
+
+document.getElementById("messaggio").innerHTML = `Il biglietto costa: ${prezzo}`
